@@ -23,8 +23,8 @@ while($linha = mysqli_fetch_assoc($executar)){
 
     $indice++;
 }
-
+// header('Content-Type: application/json');
 // encapsula os dados em formato json
-json_encode(['cursos'=>$cursos]);
-
+echo json_encode(['cursos' => $cursos]);
+// var_dump($cursos);
 ?>

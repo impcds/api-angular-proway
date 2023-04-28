@@ -13,7 +13,7 @@ $nomeCurso = $extrair->cursos->nomeCurso;
 $valorCurso = $extrair->cursos->valorCurso;
 
 // sql [como nomeCurso ser uma string, é bom colocar entre apostrofe]
-$sql = "INSERT INTO cursos (nomeCursos, valorCurso) VALUES ('$nomeCurso', $valorCurso)";
+$sql = "INSERT INTO cursos (nomeCurso, valorCurso) VALUES ('$nomeCurso', $valorCurso)";
 // executa a query
 mysqli_query($conexao, $sql);
 
@@ -24,6 +24,6 @@ $curso = [
     'nomeCurso' => $nomeCurso,
     'valorCurso' => $valorCurso
 ];
-json_encode(['curso']=>$curso);
+json_encode(['cursos'=>$cursos]);
 
 ?>

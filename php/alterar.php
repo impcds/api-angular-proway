@@ -21,11 +21,11 @@ mysqli_query($conexao, $sql);
 // exportar os dados cadastrados
 // aqui será exportado um objeto jason com os dados do curso, possivelmente para validação?
 // não entendi bem esta parte
-$curso = [
+$cursos = [
     'idCurso' => $idCurso,
     'nomeCurso' => $nomeCurso,
     'valorCurso' => $valorCurso
 ];
-json_encode(['curso']=>$curso);
+json_encode(['cursos'=>$cursos]);
 
 ?>
